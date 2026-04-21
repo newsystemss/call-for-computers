@@ -90,7 +90,7 @@ function doPost(e) {
       data.recommendations || '',
       '', // Status
       '', // Notes
-      'computers.newsystems.ca'
+      'computer.newsystems.ca'
     ]);
     const rowIndex = sheet.getLastRow();
     console.log('doPost: sheet append complete, row=' + rowIndex);

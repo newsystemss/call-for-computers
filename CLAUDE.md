@@ -2,14 +2,14 @@
 
 ## Overview
 
-Custom submission form for casting subjects who are exploring how computers can be used in unique and new ways. Static HTML/CSS/JS frontend posting to a Google Apps Script backend. Intended to be deployed at computers.newsystems.ca via Netlify.
+Custom submission form for casting subjects who are exploring how computers can be used in unique and new ways. Static HTML/CSS/JS frontend posting to a Google Apps Script backend. Intended to be deployed at computer.newsystems.ca via Netlify.
 
 Forked from `new-stadium-brief` (sibling project) on 2026-04-21. Same design system, same architecture, different Step 2 questions and destination address.
 
 ## Architecture
 
 ```
-Browser (computers.newsystems.ca)
+Browser (computer.newsystems.ca)
   |
   | POST (JSON, text/plain content-type)
   v
