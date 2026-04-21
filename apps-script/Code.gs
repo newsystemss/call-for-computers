@@ -90,7 +90,7 @@ function doPost(e) {
       data.recommendations || '',
       '', // Status
       '', // Notes
-      'casting.newsystems.ca'
+      'computers.newsystems.ca'
     ]);
     const rowIndex = sheet.getLastRow();
     console.log('doPost: sheet append complete, row=' + rowIndex);
@@ -185,17 +185,11 @@ function incrementGlobalCounter() {
 function sendConfirmationEmail(data) {
   if (!data.email) return;
 
-  const subject = 'New: Submission Received';
+  const subject = 'Submission Received';
   const body = [
-    'Thank you for your submission.',
+    'Thank you for your submission. If your work is a fit, we will be connecting with you shortly to follow up with next steps.',
     '',
-    'If your work is a fit, we will connect with you within a week to follow up with next steps.',
-    '',
-    'If you have any further questions, please email tommy@newsystems.ca',
-    '',
-    'Thank you for everything.',
-    '',
-    'New'
+    'Thank you for everything'
   ].join('\n');
 
   GmailApp.sendEmail(data.email, subject, body, {
