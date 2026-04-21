@@ -1,4 +1,4 @@
-// New Casting Call Submission Handler
+// Call for Computers Submission Handler
 // Paste this into Google Apps Script (Extensions > Apps Script from your Sheet)
 // Then deploy as Web App (Deploy > New deployment > Web app > Execute as: Me, Access: Anyone)
 
@@ -215,7 +215,7 @@ function escapeHtmlMultiline(s) {
 function sendTeamNotification(data, submissionId, timestamp, sheetRowUrl) {
   const safeName = (data.firstName || '').replace(/[\r\n]/g, '').substring(0, 50)
     + ' ' + (data.lastName || '').replace(/[\r\n]/g, '').substring(0, 50);
-  const subject = 'New Casting: ' + safeName.trim();
+  const subject = 'Call for Computers: ' + safeName.trim();
 
   const dateStr = timestamp.toLocaleDateString('en-CA', { year: 'numeric', month: 'long', day: 'numeric' });
   const idHtml = sheetRowUrl
@@ -275,13 +275,13 @@ function sendTeamNotification(data, submissionId, timestamp, sheetRowUrl) {
   ].filter(function(line) { return line !== null; }).join('\n');
 
   GmailApp.sendEmail(TEAM_EMAIL, subject, plainBody, {
-    name: 'New Casting Call Form',
+    name: 'Call for Computers',
     htmlBody: htmlBody
   });
 }
 
 function doGet() {
-  return ContentService.createTextOutput('Casting call submission endpoint is active.')
+  return ContentService.createTextOutput('Call for Computers submission endpoint is active.')
     .setMimeType(ContentService.MimeType.TEXT);
 }
 

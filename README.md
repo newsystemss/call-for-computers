@@ -1,6 +1,6 @@
-# New Casting Call Submission Form
+# Call for Computers Submission Form
 
-A custom multi-step web form for collecting submissions from people exploring how computers can be used in unique and new ways. Built as a standalone static site intended to be deployed at casting.newsystems.ca.
+A custom multi-step web form for collecting submissions from people exploring how computers can be used in unique and new ways. Built as a standalone static site intended to be deployed at computers.newsystems.ca.
 
 ## How it works
 
@@ -15,7 +15,7 @@ A custom multi-step web form for collecting submissions from people exploring ho
 - **Backend:** Google Apps Script (Web App deployment)
 - **Data store:** Google Sheet
 - **Hosting:** Netlify, auto-deploys from `main` branch
-- **Domain:** casting.newsystems.ca (CNAME to Netlify)
+- **Domain:** computers.newsystems.ca (CNAME to Netlify)
 - **Font:** Inter via Google Fonts CDN
 
 ## File structure
